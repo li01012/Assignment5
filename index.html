@@ -1,62 +1,92 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Leveraging Web Data Class 5 Homework-Muhammad Aslam</title>
+	<title>Leveraging Web Data Class 5 Homework - Muhammad</title>
 </head>
 <body>
-	<h1 style="text-align: center;"> Leveraging Web Data Class 5 Homework</h1>
+	<h1 style="text-align: center;"> Assignment05 Muhammad</h1>
 	<p>Answer the following questions about JavaScript. These questions may require you to do your own research to determine the best answer.</p>
 	<br>
-	<p>Developer Resources</p>
-	<ul>
-		<li><a href="https://www.google.com" target="_blank">Google</a></li>
-		<li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li>
-		<li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-		<li><a href="http://devdocs.io/javascript/" target="_blank">Dev Docs</a></li>
-	</ul>
+	
 	<br>
 	<h2>Basic</h2>
-	<h3>Append your name to the text between the title tags.</h3>
 	<br>
 	<h3>Describe the purpose of JavaScript, how might it relate to web mapping and visualization?</h3>
-	<p>Your answer here</p>
+	<p>"JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language".  It gives programmatic contol if used inside a host environment such as a web browser as it connects with its environment. There are two main objects of javascript, Client-side JavaScript and Server-side JavaScript. Since the programmatic control javascript can give to user, it is useful when it comes to web mapping. ArcGIS has API for javascript to work on web maps. And for Visualization, javascript D3 library is very powerful to produce maps and graphs and charts. <a href="https://bl.ocks.org/li01012/efd00cb6429a943c8b62e58934d6a7ba" target="_blank">Here </a>is a good example of what javascript can do with web mapping and visualization 
+	</p>
 	<br>
 	<h2>Variables</h2>
 	<h3>What is a variable? Provide two examples of using a variable.</h3>
-	<p>Your answer here</p>
+	<p>By definition, variable is the value that consistantly changes or have a fix pattern for chnage. In  javascript we use variables to assign values. Variable must be declared before we use it to assign value. In Javascript variables are declared with a keyword "var". 
+	For example, in my javascript code below, i declared a variable "i" as "var i;". Another example of variable <br>var x = 5; <br>var y = 6; <br>var z = x + y;
+	</p>
 	<br>
 	<h3>Write out how to assign the variable x equal to 10.</h3>
-	<p>Your answer here</p>
+	<p>var x = 10;</p>
 	<br>
 	<h2>Operators</h2>
 	<h3>Describe the differences between =, ==, and ===.</h3>
-	<p>Your answer here</p>
+	<p>= operator use to assign value to its variable. For example, in my javascript code below, decalared the var i; than in for loop used i=0 to assign 0 to my variable i.<br> == operator equivalate two values or variables. For example, below in javascript code "i % 3 == 0" means that 0 equals to i%3.<br>=== operator use to equal the value and equal its type. This operator is used to perform check if the value and type is equal or not.x === 5 </p>
 	<br>
 	<h3>What would be the result of "Hello " + 10? Why?</h3>
-	<p>Your answer here</p>
+	<p>"Hello" is text and + means to append whatever written next to it. in the expression above "Hello "+10, the result will be <br>Hello 10</p>
 	<br>
 	<h2>Loops</h2>
 	<h3>What is the purpose of a for loop? Describe in detail the advantages of using the for loop.</h3>
-	<p>Your answer here</p>
+	<p>"For-Loop is a control flow statement for specifying iteration which allows the code to be executed repeadly"(wikipedia). For any action or task that need iteration or to be executed repeatedly, for-loop is used. Different programming languages use for-loop for same purpose. Java and javascript both use for-loop. For-loop is often distinguished by an explicit loop counter or loop variable. This allows the body of the for-loop to know about the sequencing of each iteration. For-loops are also used when the number of iterations is known before entering the loop.  </p>
 	<br>
 	<h3>Describe the while loop in JavaScript.</h3>
-	<p>Your answer here</p>
+	<p>The purpose of while-loop is similar to for-loop as both used for code to be executed repeatedly. but while-loop execution is based on the given boolen condition.While-loop is more like repeating if statements. the working of while loop is very simple, the while statement check if the given condition is true or false, than execute as if the statement is true. the code below shows the example of while-loop <br> "while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}" </p>
 	<br>
 	<h2>If/Else Statements</h2>
 	<h3>What are the three <a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank">conditional statements</a>? Describe how each are used.</h3>
-	<p>Your answer here</p>
+	<p>The three statements are "if", "else" & "else if". most common these conditional statement are used together as the check the condtion for true or false and each statement has a code to execute if the statement is true or false. or in case of first statement to be false, it can go directly to else if statement. All these conditional statements have similar syntax which include a code that executed after checking the condition. in Javascript code below, if and else is used. Where as elsse if statement is use as a new condition to be checked if the first if statement is false. <br>Syntax<br>if (condition1) {
+    block of code to be executed if condition1 is true <br>
+} else if (condition2) {
+    block of code to be executed if the condition1 is false and condition2 is true<br>
+} else {
+    block of code to be executed if the condition1 is false and condition2 is false<br>
+} </p>
 	<br>
 	<h3>What is the difference between using two if statements together compared to using an if statement then an else if statement or else statement?</h3>
-	<p>Your answer here</p>
+	<p>when a loop or statement start to execute/check condition, it goes line by line to execute. using two if statement is only doable when we have two entirely different conditions to check and they are not dependant on each other for execution. for example, if statement is either true or false, in case its false, it will jump to else statement. if and else only check the condition to be true or false. but we  can only use multiple if statements when we have different condtions to check or different code to execute on that statements. <br>for example<br> i want to know if apple is green or not.<br> if{apple=="green") print "yes"<br>else print "no"<br> this above example is typical if else statement. but lets say if i want to find whats green in the basket of fruits, than i can use multiple if statements.<br>if (apple=="green") print "apple"<br>if(banana=="green") print "banana"<br> and so on..</p>
 	<br>
 
 
 	<script type="text/javascript">
-		//
-		// code goes below this line
+	var i;
+	var j=101   //extra credit :)
+function myNewFunction() {
+    
+		
+		
+	for(i = 1; i<j; i++){
+		document.write("Current value of i "+i)
+		
+		if (i % 3 == 0 && i % 5 == 0){
+		console.log('HelloWorld')}
+		else
+		if (i % 3 == 0){
+		console.log('Hello')}
+		else
+		if (i % 5 == 0){
+		console.log('World')}
+		else {console.log(i)    
+                    }
+		document.write('<br />')
+		
+}
+document.write("Loop Stopped! yayyy :)")
 
+};
+
+myNewFunction();
 	</script>
 </body>
 </html>
